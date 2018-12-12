@@ -1,0 +1,18 @@
+<div class = "NewNote">
+{{ task | json}}
+<!-- create a task in new-note component.ts -->
+
+  <form (submit) = "createNote()" >
+    <!-- createNote is the function that we create in new-note.component.tst -->
+      <P>Title:<input type="text" [(ngModel)]= "task.title" name="task.title" ></P>
+
+      <P>Description:<input type="text" [(ngModel)]= "task.description" name="task.description" ></P>
+      
+      
+      
+      <Input type="submit" value= "Create Note ">
+        <!-- add FormsModule in app.module.ts -->
+
+  </form>
+
+</div>
